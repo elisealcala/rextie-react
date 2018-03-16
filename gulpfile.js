@@ -15,12 +15,12 @@ var dirs = {
 };
 
 var sassPaths = {
-  src: dirs.src + '/css/*.scss',
+  src: dirs.src + '/scss/*.scss',
   dest: dirs.dest + '/css/'
 };
 
 var jsPaths = {
-  src: dirs.src + '/js/main.js',
+  src: dirs.src + '/js/index.js',
   dest: dirs.dest + '/js/'
 };
 
@@ -36,7 +36,7 @@ gulp.task('js', function () {
   return browserify(jsPaths.src, { debug: true, extensions: ['es6'] })
     .transform("babelify")
     .bundle()
-    .pipe(source('main.js'))
+    .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(sourcemaps.write('.'))
@@ -54,7 +54,7 @@ gulp.task('sass', function () {
 
 gulp.task('watch', function () {
   gulp.watch(sassPaths.src, ['sass']);
-  gulp.watch(jsPaths.src, ['js']);
+  gulp.watch(dirs.src + '/js/**/*.js', ['js']);
 });
 
 gulp.task('default', ['watch', 'compressScripts']);
