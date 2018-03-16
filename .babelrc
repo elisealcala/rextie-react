@@ -1,15 +1,13 @@
 {
   "presets": [
-    [
-      "env",
-      {
-        "targets": {
-          "browsers": [
-            "last 2 versions",
-            "safari >= 7"
-          ]
+    ["env",
+      {"targets": {
+          "browsers": ["last 2 versions","safari >= 7"]
         }
       }
-    ]
-  ]
+    ],
+    ["react"],
+    ["stage-2"]
+  ],
+  "plugins": ["transform-decorators-legacy"]
 }
