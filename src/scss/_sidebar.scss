@@ -1,0 +1,43 @@
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  position:fixed;
+  margin-top:77px;
+  width: 230px;
+  min-height: calc(100vh - 55px);
+  .nav{
+    flex-direction: column;
+    .nav-link{
+      display: block;
+      padding:1rem;
+      color: $r-gray-400;
+      text-decoration: none;
+      background: transparent;
+      position: relative;
+      .material-icons{
+        font-size:20px;
+        vertical-align: middle;
+        margin-right: 0.5rem;
+      }
+      span{
+        vertical-align: middle;
+      }
+      &.btn-green{
+       background: $r-grenn;
+       color: white!important;
+      }
+      &.active{
+        color:$r-grenn;
+        &:before{
+          content:'';
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 4px;
+          background: $r-grenn;
+        }
+      }
+    }
+  }
+}
