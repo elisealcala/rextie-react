@@ -7,7 +7,7 @@ deploy:
   provider: releases
   api_key:
     secure: sX73VoAN9f8Ec3NMoMiKcflfrSJkZOxfCwMT+t/XDLigPQgLfx6PZwKvo7nvb/2wBGNJd/hDBZWhhIk8bcXamzYEHzq47qiP7077a2knkgIUITKqqHwtZKElfkI0PhMziQmJl7/m+eVxbsttSCVIAa3Ib9He2dWDHg/u8YeFwFj9okwiY7gSR3VXOi00YErpd7HH0vKn2GAojrh59dRWdxBHZTV7IVA2al3Rd9eTuDv1kEu8B1wyPneec7kViWXA0N/tdSNt482YeHHFgblKE6sBce9MGaHrJXT5tF2dDAoICPVi5JdtAFsflNrCK/P7SygAybNNff26qTHlzUC1oPyk4RkQhtht62YuukS05qOPUCPfRm2/cRMSZ4tqTVIBPhzF57bgRC6ruua5KYGCAib24qNgzPfhVmyqYRstBjoS0+5Mo4P/w8QWcR0wIdzc3qDELaZGefGQvX84wSH6u65RJmUtbUqwmLe/KamNfWTgEbVlCp+uFNjehi2AjycknFThJXhvYQvFM5dPwsU+3xOCj/7aYAIbNGgMb7HD/YpgqN733GlK76REV1j/sZzwM4lqgXtA+ApMOJgNCxA/humY781ofpBcKn+lxss9MMmzaPFjExF9QziaaH27DNyJ/PIFe0bKGqHvpEJCIZdU2WqGCOCjuBK+RjVmYj5tYQs=
-    skip_cleanup: true
+  skip_cleanup: true
   on:
     repo: elizalc/rextie-react
   branch: master
