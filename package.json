@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://elizalc.github.io/rextie-react",
   "scripts": {
     "start": "lite-server",
     "build":"gulp prod",

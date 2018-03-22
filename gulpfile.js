@@ -27,7 +27,7 @@ var jsPaths = {
 };
 
 gulp.task('compressScripts', function () {
-  gulp.src(jsPaths.src)
+  gulp.src(jsPaths.dest+'index.js')
     .pipe(plumber())
     .pipe(concat('scripts.min.js'))
     .pipe(uglify())
