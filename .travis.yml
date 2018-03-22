@@ -3,11 +3,16 @@ node_js: stable
 cache:
   directories: node_modules
 script: npm run build
+before_deploy:
+      # Set up git user name and tag this commit
+      - git config --local user.name "elizalc"
+      - git config --local user.email "elizabethalcala28@gmail.com"
+      - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
-    secure: sX73VoAN9f8Ec3NMoMiKcflfrSJkZOxfCwMT+t/XDLigPQgLfx6PZwKvo7nvb/2wBGNJd/hDBZWhhIk8bcXamzYEHzq47qiP7077a2knkgIUITKqqHwtZKElfkI0PhMziQmJl7/m+eVxbsttSCVIAa3Ib9He2dWDHg/u8YeFwFj9okwiY7gSR3VXOi00YErpd7HH0vKn2GAojrh59dRWdxBHZTV7IVA2al3Rd9eTuDv1kEu8B1wyPneec7kViWXA0N/tdSNt482YeHHFgblKE6sBce9MGaHrJXT5tF2dDAoICPVi5JdtAFsflNrCK/P7SygAybNNff26qTHlzUC1oPyk4RkQhtht62YuukS05qOPUCPfRm2/cRMSZ4tqTVIBPhzF57bgRC6ruua5KYGCAib24qNgzPfhVmyqYRstBjoS0+5Mo4P/w8QWcR0wIdzc3qDELaZGefGQvX84wSH6u65RJmUtbUqwmLe/KamNfWTgEbVlCp+uFNjehi2AjycknFThJXhvYQvFM5dPwsU+3xOCj/7aYAIbNGgMb7HD/YpgqN733GlK76REV1j/sZzwM4lqgXtA+ApMOJgNCxA/humY781ofpBcKn+lxss9MMmzaPFjExF9QziaaH27DNyJ/PIFe0bKGqHvpEJCIZdU2WqGCOCjuBK+RjVmYj5tYQs=
-  skip_cleanup: true
+    secure: wfIBcV9fy9ZFOOUEJJGs8Qp28HlRR244WXzF3aDQThnm1IO4Uir2YTRdFfMVwLBABVo6hkieur6KtAQyTf/ix2hv0oa+DFa8UFn01UvdtmfecXUkJ8HD+zD0yKj6CxtvVo3YO3PgNKIz0xwNSR65tq8dl+oRBEX5CWu/C2sWLLbmctovo42yjYWfz9LoFiqFYpwaeisMgd6ul7pRlIEm6xF5sLux9oaM5lK3xJphm6UMP0kWi6grZAMXMhqynPJstE2ppg8y+3GvOx0z0+jilm+92v0wA5yjGK8MMg+z2tb4zmKJutRs9sazeT8slEaPCYDX2p0FXnleh0MW7BOHOGWKRQbeecrpnGyke/K2ZeQmX9Ln5MDwr0e78/fn8JEpxn1Tw+2B37Z4tM3ts0Zl1mU+n527c2GihrVG87PMvA+GX0mHI7xilAxcowIeiYPaptdyt3dGUzAy+26PnWGamWnSXEr9qosx5WUE1f8T2mFi72g21jTiQ1WjfolW4x2tV74PwEYxCZ6doeyFkluSMPhcgg3fVJTBXFhRx9g9iMi2mdfyZlhpz2mjnephvkaWreXYQ6qQyHEgACPpv+Liyy05n6ZncnM1Dp8wZKWJglny71hDWrs9ICasa9ZJcfxuzkpetAOxaLTlaybJ238bClpcLq1HPYU9zmk65LLSjNY=
   on:
-    tags: false
-    all_branches: true
+    repo: elizalc/rextie-react
+
+
