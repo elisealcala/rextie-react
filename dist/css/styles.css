@@ -1,6 +1,50 @@
 @import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700';
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+.color-green {
+  color: #7ACE3B; }
+
+.color-blue {
+  color: #26A8E0; }
+
+.bg-color-r-400 {
+  background: #737476; }
+
+.bg-color-r-300 {
+  background: #A2A2A2; }
+
+.bg-color-r-200 {
+  background: #E6E7E8; }
+
+.bg-color-r-100 {
+  background: #F6F9FC; }
+
+.bg-color-white {
+  background: white; }
+
+.bg-color-gray {
+  background: #F3F3F3; }
+
+.btn-green-rounded {
+  background: #7ACE3B;
+  border: 1px solid #7ACE3B;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.4rem 1.4rem; }
+
+.btn-white-rounded {
+  background: white;
+  border: 1px solid #7ACE3B;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #7ACE3B;
+  text-transform: uppercase;
+  padding: 0.4rem 1.4rem; }
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -103,5 +147,77 @@ header {
 .content-operation {
   background: #F6F9FC;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.21); }
+  .content-operation .change-type {
+    background: white; }
+    .content-operation .change-type p {
+      text-align: center;
+      margin: 0.5rem 0;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 14px; }
+  .content-operation .change-main h4 {
+    font-size: 16px;
+    font-weight: 700; }
+  .content-operation .change-main p {
+    font-size: 14px;
+    font-weight: 300; }
+  .content-operation .change-main .exchange h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700; }
+  .content-operation .change-main .exchange .box-exchange {
+    display: inline-block;
+    width: 90%; }
+    .content-operation .change-main .exchange .box-exchange p.label {
+      display: inline-block;
+      width: 100%;
+      background: #E6E7E8;
+      margin-bottom: 0; }
+    .content-operation .change-main .exchange .box-exchange input {
+      width: 100%;
+      border: none; }
+
+.content-operation .table-envio {
+  margin: 0 auto;
+  width: 90%; }
+  .content-operation .table-envio table {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase; }
+    .content-operation .table-envio table td, .content-operation .table-envio table th {
+      padding: 0.5rem;
+      border-left: 1px solid #737476;
+      border-right: 1px solid #737476; }
+
+.content-operation .box-exchange i {
+  position: absolute;
+  right: 2rem;
+  top: 2rem; }
+
+.content-operation select {
+  border-radius: 0;
+  -moz-appearance: none;
+  /* Firefox */
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  appearance: none; }
+  .content-operation select:focus {
+    outline: none; }
+
+.content-operation .circle-green {
+  background: #7ACE3B;
+  color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem; }
+
+.content-operation .table-cuenta table {
+  text-transform: capitalize; }
 
 /*# sourceMappingURL=styles.css.map */

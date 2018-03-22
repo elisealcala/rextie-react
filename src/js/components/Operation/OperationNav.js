@@ -6,7 +6,7 @@ export class OperationNav extends Component {
     return (
       <div className="nav-operation row">
         <div className="col-4">
-          <NavLink to='/operation' className="nav-link" activeClassName="active" onClick={this.hideMobile}>
+          <NavLink to='/operation/start' className="nav-link" activeClassName="active" onClick={this.hideMobile}>
             <span>1</span><p>¿Cuánto quieres cambiar?</p>
           </NavLink>
         </div>
@@ -16,7 +16,7 @@ export class OperationNav extends Component {
           </NavLink>
         </div>
         <div className="col-4">
-          <NavLink to='/operation/confirm' className="nav-link" activeClassName="active" onClick={this.hideMobile}>
+          <NavLink to='/operation/transfer' className="nav-link" activeClassName="active" onClick={this.hideMobile}>
             <span>3</span><p>Transferencia de tu banca</p>
           </NavLink>
         </div>

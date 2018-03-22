@@ -8,6 +8,8 @@ var buffer = require('vinyl-buffer')
 var concat = require('gulp-concat')
 var uglify = require('gulp-uglify')
 var plumber = require('gulp-plumber')
+var connect = require('gulp-connect');
+var historyApiFallback = require('connect-history-api-fallback');
 
 var dirs = {
   src: './src',
@@ -57,4 +59,14 @@ gulp.task('watch', function () {
   gulp.watch(dirs.src + '/js/**/*.js', ['js']);
 });
 
+gulp.task('connect', function () {
+  connect.server({
+    port: 3000,
+    livereload: true,
+    middleware: function (connect, opt) {
+      return [historyApiFallback({})];
+    }
+  });
+});
 gulp.task('default', ['watch', 'compressScripts']);
+gulp.task('prod', ['js', 'sass', 'compressScripts']);

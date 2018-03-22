@@ -31693,7 +31693,7 @@ var App = exports.App = function (_Component) {
 
 exports.default = App;
 
-},{"./Dashboard":83,"./Header":84,"./Operation/Operation":86,"./Sidebar":88,"react":76,"react-router-dom":62,"reactstrap":78}],83:[function(require,module,exports){
+},{"./Dashboard":83,"./Header":84,"./Operation/Operation":87,"./Sidebar":90,"react":76,"react-router-dom":62,"reactstrap":78}],83:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31897,7 +31897,289 @@ var Header = exports.Header = function (_Component) {
 exports.default = Header;
 
 },{"react":76,"reactstrap":78}],85:[function(require,module,exports){
-"use strict";
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.DataTransfer = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactstrap = require('reactstrap');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var DataTransfer = exports.DataTransfer = function (_Component) {
+  _inherits(DataTransfer, _Component);
+
+  function DataTransfer() {
+    _classCallCheck(this, DataTransfer);
+
+    return _possibleConstructorReturn(this, (DataTransfer.__proto__ || Object.getPrototypeOf(DataTransfer)).apply(this, arguments));
+  }
+
+  _createClass(DataTransfer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'content-operation row' },
+        _react2.default.createElement(
+          'p',
+          { className: 'w-75 mx-auto text-center mt-4' },
+          'Tu operaci\xF3n con c\xF3digo N8608 ha sido registrada satisfactoriamente el dia 08/02 a las 23:00 hrs.'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'w-75 mx-auto text-center mt-2' },
+          'Transfiere desde tu banca en l\xEDnea a Rextie',
+          _react2.default.createElement('br', null),
+          'Vence en 15:00'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'table-envio table-cuenta my-4' },
+          _react2.default.createElement(
+            'table',
+            null,
+            _react2.default.createElement(
+              'tbody',
+              null,
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-r-200' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Tipo de Operaci\xF3n'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Yo env\xEDo'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-gray' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Compra'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '1000.00 D\xF3lares'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-r-200' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Banco de Destino'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Interbank'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-gray' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Tipo de Cuenta'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Corriente Soles'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-r-200' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'N\xFAmero de Cuenta'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '00316600300127342868'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-gray' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Titular de la Cuenta'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Rextie S.A.C.'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-r-200' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'R.U.C. del titular'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '206010030013 '
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'w-75 mx-auto text-center mt-2' },
+          'Env\xEDa el comprobante a pagos@rextie.com y te realizaremos la transacci\xF3n a la sgte. cuenta'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'table-envio table-cuenta my-4' },
+          _react2.default.createElement(
+            'table',
+            null,
+            _react2.default.createElement(
+              'tbody',
+              null,
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-r-200' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Banco de Destino'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Interbank'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-gray' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Cantidad a transferir'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '$609.01 USD'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-gray' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Tipo de Cambio'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '3.2840'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-r-200' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Tipo de Cuenta'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Ahorro D\xF3lares'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-gray' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'N\xFAmero de Cuenta'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '003166003001273'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-r-200' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Titular de la Cuenta'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Elizabeth Alcal\xE1'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'change-main w-100 text-center py-4' },
+          _react2.default.createElement(
+            'button',
+            { className: 'btn-green-rounded' },
+            'Ir a la p\xE1gina principal'
+          )
+        )
+      );
+    }
+  }]);
+
+  return DataTransfer;
+}(_react.Component);
+
+;
+
+exports.default = DataTransfer;
+
+},{"react":76,"reactstrap":78}],86:[function(require,module,exports){
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -31906,9 +32188,11 @@ exports.DolarChange = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
+
+var _reactstrap = require('reactstrap');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -31922,150 +32206,168 @@ var DolarChange = exports.DolarChange = function (_Component) {
   _inherits(DolarChange, _Component);
 
   function DolarChange() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     _classCallCheck(this, DolarChange);
 
-    return _possibleConstructorReturn(this, (DolarChange.__proto__ || Object.getPrototypeOf(DolarChange)).apply(this, arguments));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = DolarChange.__proto__ || Object.getPrototypeOf(DolarChange)).call.apply(_ref, [this].concat(args))), _this), _this.changeValues = function () {
+      console.log('algo');
+    }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(DolarChange, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "div",
-        { className: "content-operation row" },
+        'div',
+        { className: 'content-operation row' },
         _react2.default.createElement(
-          "div",
-          { className: "change-type w-100" },
+          'div',
+          { className: 'change-type w-100' },
           _react2.default.createElement(
-            "div",
-            { className: "row" },
+            'div',
+            { className: 'row' },
             _react2.default.createElement(
-              "div",
-              { className: "col-4" },
+              'div',
+              { className: 'col-4' },
               _react2.default.createElement(
-                "p",
-                null,
-                "Tipo de Cambio"
+                'p',
+                { className: 'color-green' },
+                'Tipo de Cambio'
               )
             ),
             _react2.default.createElement(
-              "div",
-              { className: "col-4" },
+              'div',
+              { className: 'col-4' },
               _react2.default.createElement(
-                "p",
-                null,
-                "Compra: ",
+                'p',
+                { className: 'color-blue' },
+                'Compra: ',
                 _react2.default.createElement(
-                  "span",
-                  { className: "buy-dolar" },
-                  "3.2460"
+                  'span',
+                  { className: 'buy-dolar' },
+                  '3.2460'
                 )
               )
             ),
             _react2.default.createElement(
-              "div",
-              { className: "col-4" },
+              'div',
+              { className: 'col-4' },
               _react2.default.createElement(
-                "p",
-                null,
-                "Venta: ",
+                'p',
+                { className: 'color-blue' },
+                'Venta: ',
                 _react2.default.createElement(
-                  "span",
-                  { className: "sell-dolar" },
-                  "3.2840"
+                  'span',
+                  { className: 'sell-dolar' },
+                  '3.2840'
                 )
               )
             )
           )
         ),
         _react2.default.createElement(
-          "div",
-          { className: "change-main" },
+          'div',
+          { className: 'change-main w-100 text-center py-4' },
           _react2.default.createElement(
-            "h4",
-            null,
-            "Cambio de D\xF3lares Online"
+            'h4',
+            { className: 'mb-0' },
+            'Cambio de D\xF3lares Online'
           ),
           _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "Seguro, R\xE1pido y al Mejor Precio"
+            'Seguro, R\xE1pido y al Mejor Precio'
           ),
           _react2.default.createElement(
-            "div",
-            { className: "exhange" },
+            'div',
+            { className: 'container' },
             _react2.default.createElement(
-              "div",
-              { className: "have" },
+              'div',
+              { className: 'row align-items-center' },
               _react2.default.createElement(
-                "h3",
-                null,
-                "Tengo"
+                'div',
+                { className: 'exchange col-5' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'have' },
+                  _react2.default.createElement(
+                    'h3',
+                    null,
+                    'Tengo'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'box-exchange' },
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'label py-2', htmlFor: '' },
+                      'Nuevos Soles (PEN)'
+                    ),
+                    _react2.default.createElement('input', { className: 'py-2 px-4', type: 'text' })
+                  )
+                )
               ),
               _react2.default.createElement(
-                "div",
-                { className: "box-exchange" },
+                'div',
+                { className: 'switch col-2', onClick: this.changeValues },
                 _react2.default.createElement(
-                  "label",
-                  { htmlFor: "" },
-                  "Nuevos Soles (PEN)"
-                ),
-                _react2.default.createElement("input", { type: "text" })
+                  'i',
+                  { className: 'large material-icons' },
+                  'repeat'
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'exchange col-5' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'have' },
+                  _react2.default.createElement(
+                    'h3',
+                    null,
+                    'Quiero'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'box-exchange' },
+                    _react2.default.createElement(
+                      'p',
+                      { className: 'label py-2', htmlFor: '' },
+                      'D\xF3lares (USD)'
+                    ),
+                    _react2.default.createElement('input', { className: 'py-2 px-4', type: 'text' })
+                  )
+                )
               )
             )
           ),
           _react2.default.createElement(
-            "div",
-            { className: "switch" },
-            _react2.default.createElement(
-              "i",
-              { className: "large material-icons" },
-              "repeat"
-            )
+            'p',
+            { className: 'mt-4 mb-0' },
+            'Ahorra S/2.20 respecto al banco'
           ),
           _react2.default.createElement(
-            "div",
-            { className: "exhange" },
-            _react2.default.createElement(
-              "div",
-              { className: "have" },
-              _react2.default.createElement(
-                "h3",
-                null,
-                "Tengo"
-              ),
-              _react2.default.createElement(
-                "div",
-                { className: "box-exchange" },
-                _react2.default.createElement(
-                  "label",
-                  { htmlFor: "" },
-                  "Nuevos Soles (PEN)"
-                ),
-                _react2.default.createElement("input", { type: "text" })
-              )
-            )
-          ),
-          _react2.default.createElement(
-            "p",
+            'p',
             null,
-            "Ahorra S/2.20 respecto al banco"
-          ),
-          _react2.default.createElement(
-            "p",
-            null,
-            "Tipo de cambio vence en: ",
+            'Tipo de cambio vence en: ',
             _react2.default.createElement(
-              "span",
+              'span',
               null,
-              "01:40"
+              '01:40'
             ),
-            "  "
+            '  '
           ),
           _react2.default.createElement(
-            "button",
-            null,
-            "Continuar"
+            'button',
+            { className: 'btn-green-rounded' },
+            'Continuar'
           )
         )
       );
@@ -32077,7 +32379,7 @@ var DolarChange = exports.DolarChange = function (_Component) {
 
 exports.default = DolarChange;
 
-},{"react":76}],86:[function(require,module,exports){
+},{"react":76,"reactstrap":78}],87:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -32100,6 +32402,14 @@ var _OperationNav2 = _interopRequireDefault(_OperationNav);
 var _DolarChange = require('./DolarChange');
 
 var _DolarChange2 = _interopRequireDefault(_DolarChange);
+
+var _UserData = require('./UserData');
+
+var _UserData2 = _interopRequireDefault(_UserData);
+
+var _DataTransfer = require('./DataTransfer');
+
+var _DataTransfer2 = _interopRequireDefault(_DataTransfer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -32128,7 +32438,9 @@ var Operation = exports.Operation = function (_Component) {
         _react2.default.createElement(
           _reactRouterDom.Switch,
           null,
-          _react2.default.createElement(_reactRouterDom.Route, { path: '/operation', name: '/inicio', component: _DolarChange2.default })
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/operation/start', name: 'Cambio', component: _DolarChange2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/operation/data', name: 'Datos', component: _UserData2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/operation/transfer', name: 'Transferencia', component: _DataTransfer2.default })
         )
       );
     }
@@ -32139,7 +32451,7 @@ var Operation = exports.Operation = function (_Component) {
 
 exports.default = Operation;
 
-},{"./DolarChange":85,"./OperationNav":87,"react":76,"react-router-dom":62}],87:[function(require,module,exports){
+},{"./DataTransfer":85,"./DolarChange":86,"./OperationNav":88,"./UserData":89,"react":76,"react-router-dom":62}],88:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -32183,7 +32495,7 @@ var OperationNav = exports.OperationNav = function (_Component) {
           { className: 'col-4' },
           _react2.default.createElement(
             _reactRouterDom.NavLink,
-            { to: '/operation', className: 'nav-link', activeClassName: 'active', onClick: this.hideMobile },
+            { to: '/operation/start', className: 'nav-link', activeClassName: 'active', onClick: this.hideMobile },
             _react2.default.createElement(
               'span',
               null,
@@ -32219,7 +32531,7 @@ var OperationNav = exports.OperationNav = function (_Component) {
           { className: 'col-4' },
           _react2.default.createElement(
             _reactRouterDom.NavLink,
-            { to: '/operation/confirm', className: 'nav-link', activeClassName: 'active', onClick: this.hideMobile },
+            { to: '/operation/transfer', className: 'nav-link', activeClassName: 'active', onClick: this.hideMobile },
             _react2.default.createElement(
               'span',
               null,
@@ -32243,7 +32555,292 @@ var OperationNav = exports.OperationNav = function (_Component) {
 
 exports.default = OperationNav;
 
-},{"react":76,"react-router-dom":62}],88:[function(require,module,exports){
+},{"react":76,"react-router-dom":62}],89:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.UserData = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactstrap = require('reactstrap');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var UserData = exports.UserData = function (_Component) {
+  _inherits(UserData, _Component);
+
+  function UserData() {
+    _classCallCheck(this, UserData);
+
+    return _possibleConstructorReturn(this, (UserData.__proto__ || Object.getPrototypeOf(UserData)).apply(this, arguments));
+  }
+
+  _createClass(UserData, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'content-operation row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'table-envio my-4' },
+          _react2.default.createElement(
+            'table',
+            null,
+            _react2.default.createElement(
+              'tbody',
+              null,
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-r-200' },
+                _react2.default.createElement(
+                  'th',
+                  null,
+                  'Tipo de Operaci\xF3n'
+                ),
+                _react2.default.createElement(
+                  'th',
+                  null,
+                  'Yo env\xEDo'
+                ),
+                _react2.default.createElement(
+                  'th',
+                  null,
+                  'Yo recibo'
+                ),
+                _react2.default.createElement(
+                  'th',
+                  null,
+                  'Tipo de cambio'
+                )
+              ),
+              _react2.default.createElement(
+                'tr',
+                { className: 'bg-color-white' },
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  'Compra'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '1000.00 D\xF3lares'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '3462.00 Soles'
+                ),
+                _react2.default.createElement(
+                  'td',
+                  null,
+                  '3.246'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'change-main w-100 text-center py-4' },
+          _react2.default.createElement(
+            'h4',
+            { className: 'mb-4' },
+            'Selecciona tus cuentas de origen y destino'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row align-items-center' },
+              _react2.default.createElement(
+                'div',
+                { className: 'exchange col-6' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'box-exchange' },
+                  _react2.default.createElement(
+                    _reactstrap.FormGroup,
+                    { className: 'text-left' },
+                    _react2.default.createElement(
+                      _reactstrap.Label,
+                      { className: 'mb-0', 'for': 'exampleSelect' },
+                      'Env\xEDo desde:'
+                    ),
+                    _react2.default.createElement(
+                      _reactstrap.Input,
+                      { type: 'select', name: 'select', id: 'exampleSelect' },
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Cuenta Interbank'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Cuenta Scotiabank'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Cuenta Bcp'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'i',
+                      { className: 'material-icons' },
+                      'expand_more'
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'exchange col-6' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'box-exchange' },
+                  _react2.default.createElement(
+                    _reactstrap.FormGroup,
+                    { className: 'text-left' },
+                    _react2.default.createElement(
+                      _reactstrap.Label,
+                      { className: 'mb-0', 'for': 'exampleSelect' },
+                      ' Recibo en:'
+                    ),
+                    _react2.default.createElement(
+                      _reactstrap.Input,
+                      { type: 'select', name: 'select', id: 'exampleSelect' },
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Cuenta Interbank'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Cuenta Scotiabank'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        null,
+                        'Cuenta Bcp'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'i',
+                      { className: 'material-icons' },
+                      'expand_more'
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'p',
+                { className: 'w-100 d-flex justify-content-center' },
+                _react2.default.createElement(
+                  'span',
+                  null,
+                  'Agregar otra cuenta bancaria'
+                ),
+                ' ',
+                _react2.default.createElement(
+                  'span',
+                  { className: 'circle-green' },
+                  _react2.default.createElement(
+                    'i',
+                    { className: 'material-icons' },
+                    'add'
+                  )
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'container' },
+            _react2.default.createElement(
+              'div',
+              { className: 'row align-items-center' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-5 pl-4 text-left' },
+                _react2.default.createElement(
+                  _reactstrap.FormGroup,
+                  null,
+                  _react2.default.createElement(
+                    _reactstrap.Label,
+                    { className: 'mb-0', 'for': 'exampleEmail' },
+                    'Celular'
+                  ),
+                  _react2.default.createElement(_reactstrap.Input, { type: 'text', name: 'email', id: 'exampleEmail' })
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-7' },
+                _react2.default.createElement(
+                  _reactstrap.FormGroup,
+                  { check: true },
+                  _react2.default.createElement(
+                    _reactstrap.Label,
+                    { check: true },
+                    _react2.default.createElement(_reactstrap.Input, { type: 'checkbox' }),
+                    ' ',
+                    'Acepto los T\xE9rminos y Condiciones'
+                  )
+                )
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'p',
+            null,
+            'Tipo de cambio vence en: ',
+            _react2.default.createElement(
+              'span',
+              null,
+              '01:40'
+            )
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'btn-white-rounded mr-3' },
+            'Regresar'
+          ),
+          _react2.default.createElement(
+            'button',
+            { className: 'btn-green-rounded ml-3' },
+            'Continuar'
+          )
+        )
+      );
+    }
+  }]);
+
+  return UserData;
+}(_react.Component);
+
+;
+
+exports.default = UserData;
+
+},{"react":76,"reactstrap":78}],90:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -32374,7 +32971,7 @@ var Sidebar = exports.Sidebar = function (_Component) {
 
 exports.default = Sidebar;
 
-},{"react":76,"react-router-dom":62,"reactstrap":78}],89:[function(require,module,exports){
+},{"react":76,"react-router-dom":62,"reactstrap":78}],91:[function(require,module,exports){
 'use strict';
 
 var _react = require('react');
@@ -32401,6 +32998,6 @@ _reactDom2.default.render(_react2.default.createElement(
   _react2.default.createElement(_App2.default, null)
 ), app);
 
-},{"./components/App":82,"react":76,"react-dom":42,"react-router-dom":62}]},{},[89])
+},{"./components/App":82,"react":76,"react-dom":42,"react-router-dom":62}]},{},[91])
 
 //# sourceMappingURL=index.js.map

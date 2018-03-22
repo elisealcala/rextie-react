@@ -4,3 +4,48 @@ $r-gray-100: #F6F9FC;
 $r-gray-200: #E6E7E8;
 $r-gray-300: #A2A2A2;
 $r-gray-400: #737476;
+
+.color-green{
+  color: $r-grenn;
+}
+.color-blue{
+  color: $r-blue;
+}
+.bg-color-r-400{
+  background: $r-gray-400;
+}
+.bg-color-r-300{
+  background: $r-gray-300;
+}
+.bg-color-r-200{
+  background: $r-gray-200;
+}
+.bg-color-r-100{
+  background: $r-gray-100;
+}
+.bg-color-white{
+  background: white;
+}
+.bg-color-gray{
+  background:#F3F3F3;
+}
+.btn-green-rounded{
+  background: $r-grenn;
+  border:1px solid $r-grenn;
+  border-radius:20px;
+  font-size:14px;
+  font-weight: 700;
+  color:white;
+  text-transform: uppercase;
+  padding: 0.4rem 1.4rem;
+}
+.btn-white-rounded{
+  background: white;
+  border:1px solid $r-grenn;
+  border-radius:20px;
+  font-size:14px;
+  font-weight: 700;
+  color:$r-grenn;
+  text-transform: uppercase;
+  padding: 0.4rem 1.4rem;
+}
