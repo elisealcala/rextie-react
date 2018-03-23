@@ -32994,7 +32994,7 @@ var app = document.getElementById('root');
 
 _reactDom2.default.render(_react2.default.createElement(
   _reactRouterDom.BrowserRouter,
-  null,
+  { basename: '/rextie-react' },
   _react2.default.createElement(_App2.default, null)
 ), app);
 
