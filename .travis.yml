@@ -1,16 +1,19 @@
+env:
+  global:
+    secure: "N4Vk3m5ZztPGdBGdPkxLbP8/VDA/KnZUDVH9CQQlRRDcd/+leiMs6tWOoEv0EldP95nd99aj5M4P3KeHMB76+5KyHlbc7qqJewDWZXpTDgHvo7YTfOYV8/VWaGVvxhi+A4dOZ3o0RuLPa51zHnPPo5VtpxEMPMr4vKpSNZXTiybWHZi0rmblzzNRKfp7yFLAkhUoaF0ZYRjMXirFn8q/jtZ3ctVSntJSQiXuuBXr6sHx69kzqURNaBR3YuvAmip99qTjx4hKAomvuq6rC0iSUm48dp7U2gAP4uscGbXDMvNDgI1KlTAX+nS5zGLBQE5gJC5vqDti/bXaupWJ97I+Fz6aUGBhx1eKw6r/DIPZHVvYrSX+Vfrg+SOJ69RM/JRfrflzK5yC/N2h6Drtje8ZCXPDk15TSvIWjjWHAqOsmKJgWEqBFeNKinVOkBmcq9o0HcjfOsqomD+9yttT8cFmqa/ackTmtUlW7T07Dc/x7NRBZIwDAD6bpVQAnpXf2Y2wDKPfBU74X43u38uSC/CKqZN/6tMXqrFUfwZUkjPmISf9Ph9mmT18/pOeQSczMP/KPe57p2ZTG7s1fwbmSI+Bq7zJwB1PMG6W5oG/pxfXJqxBLaqAZJQFcOj3g83Yi2Dtn8AAHWtxglxjaDRrBeVMT4JKDRT9n1BqM/BtbIQYPSE="
 language: node_js
-node_js: stable
+node_js:
+  - "stable"
 cache:
-  directories: node_modules
-script: npm run build
+  directories:
+  - node_modules
+script:
+  - npm run build
 deploy:
-  provider: releases
-  api_key:
-    secure: wfIBcV9fy9ZFOOUEJJGs8Qp28HlRR244WXzF3aDQThnm1IO4Uir2YTRdFfMVwLBABVo6hkieur6KtAQyTf/ix2hv0oa+DFa8UFn01UvdtmfecXUkJ8HD+zD0yKj6CxtvVo3YO3PgNKIz0xwNSR65tq8dl+oRBEX5CWu/C2sWLLbmctovo42yjYWfz9LoFiqFYpwaeisMgd6ul7pRlIEm6xF5sLux9oaM5lK3xJphm6UMP0kWi6grZAMXMhqynPJstE2ppg8y+3GvOx0z0+jilm+92v0wA5yjGK8MMg+z2tb4zmKJutRs9sazeT8slEaPCYDX2p0FXnleh0MW7BOHOGWKRQbeecrpnGyke/K2ZeQmX9Ln5MDwr0e78/fn8JEpxn1Tw+2B37Z4tM3ts0Zl1mU+n527c2GihrVG87PMvA+GX0mHI7xilAxcowIeiYPaptdyt3dGUzAy+26PnWGamWnSXEr9qosx5WUE1f8T2mFi72g21jTiQ1WjfolW4x2tV74PwEYxCZ6doeyFkluSMPhcgg3fVJTBXFhRx9g9iMi2mdfyZlhpz2mjnephvkaWreXYQ6qQyHEgACPpv+Liyy05n6ZncnM1Dp8wZKWJglny71hDWrs9ICasa9ZJcfxuzkpetAOxaLTlaybJ238bClpcLq1HPYU9zmk65LLSjNY=
+  provider: pages
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN
   on:
-    tags: true
-    all_branches: true
-    repo: elizalc/rextie-react
+    branch: master
 
 
