@@ -9,7 +9,7 @@ var concat = require('gulp-concat')
 var uglify = require('gulp-uglify')
 var plumber = require('gulp-plumber')
 var connect = require('gulp-connect');
-var historyApiFallback = require('connect-history-api-fallback');
+var history = require('connect-history-api-fallback');
 
 var dirs = {
   src: './src',
@@ -51,7 +51,7 @@ gulp.task('sass', function () {
     .pipe(sourcemaps.init())
     .pipe(concat('styles.css'))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(sassPaths.dest));
+    .pipe(gulp.dest(sassPaths.dest))
 });
 
 gulp.task('watch', function () {
@@ -64,9 +64,10 @@ gulp.task('connect', function () {
     port: 3000,
     livereload: true,
     middleware: function (connect, opt) {
-      return [historyApiFallback({})];
+      return [ history({}) ];
     }
   });
 });
+gulp.task('serve',['connect', 'watch']);
 gulp.task('default', ['watch', 'compressScripts']);
 gulp.task('prod', ['js', 'sass', 'compressScripts']);

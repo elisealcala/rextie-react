@@ -5,8 +5,8 @@ import { HashRouter, Router, Switch, BrowserRouter } from 'react-router-dom';
 const app = document.getElementById('root')
 
 ReactDOM.render(
-  <BrowserRouter basename='/rextie-react' >
+  <HashRouter basename='/rextie-react' >
     <App />
-  </BrowserRouter>,
+  </HashRouter>,
   app
 )

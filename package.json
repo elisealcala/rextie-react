@@ -6,7 +6,7 @@
   "homepage": "https://elizalc.github.io/rextie-react",
   "scripts": {
     "start": "lite-server",
-    "build":"gulp prod",
+    "build": "gulp prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -19,6 +19,7 @@
     "babel-preset-stage-2": "^6.24.1",
     "babelify": "^8.0.0",
     "browserify": "^16.1.1",
+    "connect-history-api-fallback": "^1.5.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.5.0",
@@ -31,7 +32,6 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
-    "connect-history-api-fallback": "^1.5.0",
     "lite-server": "^2.3.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
