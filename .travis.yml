@@ -1,0 +1,19 @@
+env:
+  global:
+    secure: "N4Vk3m5ZztPGdBGdPkxLbP8/VDA/KnZUDVH9CQQlRRDcd/+leiMs6tWOoEv0EldP95nd99aj5M4P3KeHMB76+5KyHlbc7qqJewDWZXpTDgHvo7YTfOYV8/VWaGVvxhi+A4dOZ3o0RuLPa51zHnPPo5VtpxEMPMr4vKpSNZXTiybWHZi0rmblzzNRKfp7yFLAkhUoaF0ZYRjMXirFn8q/jtZ3ctVSntJSQiXuuBXr6sHx69kzqURNaBR3YuvAmip99qTjx4hKAomvuq6rC0iSUm48dp7U2gAP4uscGbXDMvNDgI1KlTAX+nS5zGLBQE5gJC5vqDti/bXaupWJ97I+Fz6aUGBhx1eKw6r/DIPZHVvYrSX+Vfrg+SOJ69RM/JRfrflzK5yC/N2h6Drtje8ZCXPDk15TSvIWjjWHAqOsmKJgWEqBFeNKinVOkBmcq9o0HcjfOsqomD+9yttT8cFmqa/ackTmtUlW7T07Dc/x7NRBZIwDAD6bpVQAnpXf2Y2wDKPfBU74X43u38uSC/CKqZN/6tMXqrFUfwZUkjPmISf9Ph9mmT18/pOeQSczMP/KPe57p2ZTG7s1fwbmSI+Bq7zJwB1PMG6W5oG/pxfXJqxBLaqAZJQFcOj3g83Yi2Dtn8AAHWtxglxjaDRrBeVMT4JKDRT9n1BqM/BtbIQYPSE="
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+script:
+  - npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
+
+
