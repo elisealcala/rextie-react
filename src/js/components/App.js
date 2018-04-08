@@ -5,6 +5,7 @@ import Header from './Header'
 import Sidebar from './Sidebar'
 import Dashboard from './Dashboard';
 import Operation from './Operation/Operation'
+import Footer from './Footer'
 
 export class App extends Component {
   render() {
@@ -23,6 +24,7 @@ export class App extends Component {
             </Container>
           </main>
         </div>
+        <Footer />
       </div>
     )
   }

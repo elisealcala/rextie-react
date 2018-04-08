@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import OperationNav from './OperationNav';
 import DolarChange from './DolarChange';
 import UserData from './UserData';

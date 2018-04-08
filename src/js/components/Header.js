@@ -31,7 +31,7 @@ export class Header extends Component {
     return (
       <header className="app-header navbar py-0">
         <Navbar color="faded" light expand="md" className='w-100'>
-          <NavbarBrand href="/"><img className='logo' src={'./src/img/logo.png'} alt="logo"/></NavbarBrand>
+          <NavbarBrand href="/"><img className='logo' src={'../../img/logo.png'} alt="logo"/></NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto mr-0" navbar>

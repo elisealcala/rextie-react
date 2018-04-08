@@ -11,6 +11,9 @@ $r-gray-400: #737476;
 .color-blue{
   color: $r-blue;
 }
+.bg-color-light-blue{
+  background: rgb(189, 226, 252);
+}
 .bg-color-r-400{
   background: $r-gray-400;
 }
@@ -29,6 +32,9 @@ $r-gray-400: #737476;
 .bg-color-gray{
   background:#F3F3F3;
 }
+.bg-green{
+  background: $r-grenn!important;
+}
 .btn-green-rounded{
   background: $r-grenn;
   border:1px solid $r-grenn;
@@ -38,6 +44,32 @@ $r-gray-400: #737476;
   color:white;
   text-transform: uppercase;
   padding: 0.4rem 1.4rem;
+  &:hover{
+    color:white;
+    background: rgb(99, 167, 48);
+    border:1px solid rgb(99, 167, 48);
+    transition: all 0.5 ease;
+  }
+  &:disabled{
+    background: rgb(180, 226, 144);
+    border:1px solid rgb(180, 226, 144);
+    border-radius:20px;
+    font-size:14px;
+    font-weight: 700;
+    color:white;
+    text-transform: uppercase;
+    padding: 0.4rem 1.4rem;
+  }
+  &.disabled{
+    background: rgb(180, 226, 144);
+    border:1px solid rgb(180, 226, 144);
+    border-radius:20px;
+    font-size:14px;
+    font-weight: 700;
+    color:white;
+    text-transform: uppercase;
+    padding: 0.4rem 1.4rem;
+  }
 }
 .btn-white-rounded{
   background: white;
@@ -48,4 +80,30 @@ $r-gray-400: #737476;
   color:$r-grenn;
   text-transform: uppercase;
   padding: 0.4rem 1.4rem;
+  &:hover{
+    background: white;
+    color: rgb(99, 167, 48);
+    border:1px solid rgb(99, 167, 48);
+    transition: all 0.5 ease;
+  }
+}
+.btn-disabled{
+  background: rgb(180, 226, 144);
+  border:1px solid rgb(180, 226, 144);
+  border-radius:20px;
+  font-size:14px;
+  font-weight: 700;
+  color:white;
+  text-transform: uppercase;
+  padding: 0.4rem 1.4rem;
+}
+input[type=checkbox].is-invalid{
+  outline:1px solid rgb(255, 109, 109);
+  border-radius: 5px;
+}
+.bg-green-light{
+  background:rgb(153, 218, 104)!important;
+}
+.font-bold{
+  font-weight: 700!important;
 }
